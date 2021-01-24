@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h2><center><b><i>A simple calculator using HTML CSS and Javascript</i></b></center></h2>
+    <br><br><br>
+	<title>Calculator</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <div class="main">
+            <form class="calculatorForm" name="calculatorForm">
+                <div class="screen">
+                    <input type="text" name="screen" class="screen" value="" readonly>
+                </div>
+                <div class="clear">
+                    <input type="button" name="clear" value="clear"  onclick="Clear()">
+                </div>
+                <div class="btn">
+                    <input type="button" name="num7" value="7" onclick="thisButton(this)">
+                    <input type="button" name="num8" value="8" onclick="thisButton(this)">
+                    <input type="button" name="num9" value="9" onclick="thisButton(this)">
+                    <input type="button" name="divide" value="/" onclick="thisButton(this)">
+                </div>
+                <div class="btn">
+                    <input type="button" name="num4" value="4" onclick="thisButton(this)">
+                    <input type="button" name="num5" value="5" onclick="thisButton(this)">
+                    <input type="button" name="num6" value="6" onclick="thisButton(this)">
+                    <input type="button" name="multiply" value="*" onclick="thisButton(this)">
+                </div>
+                <div class="btn">
+                    <input type="button" name="num1" value="1" onclick="thisButton(this)">
+                    <input type="button" name="num2" value="2" onclick="thisButton(this)">
+                    <input type="button" name="num3" value="3" onclick="thisButton(this)">
+                    <input type="button" name="plus" value="+" onclick="thisButton(this)">
+                </div>
+                <div class="btn">
+                    <input type="button" name="num0" value="0" onclick="thisButton(this)">
+                    <input type="button" name="decimal" value="." onclick="thisButton(this)">
+                    <input type="button" name="equal" value="=" onclick="Calculate()">
+                    <input type="button" name="subtraction" value="-" onclick="thisButton(this)">
+                    
+                </div>
+            </form>
+        </div>
+    </center>
+
+	<script>
+		function thisButton(ok){
+			calculatorForm.screen.value += ok.value;
+		}
+		function Clear(){
+			calculatorForm.screen.value = null;
+		}
+		function Calculate(){
+			calculatorForm.screen.value = eval(calculatorForm.screen.value);
+		}
+    </script>
+</body>
+</html>

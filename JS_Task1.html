@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Javascript</title>
+</head>
+<body>
+    <h2><center>Hello there!</center></h2><br>
+    <h3><center>Welcome to this practicing page of javascript   ~ Sakshi</center></h3><br><br><br><br>
+    <h4><center>If you want to check output: Follow these steps<br><br>
+        . Right Click > Inspect<br><br>
+        . go to console<br><br>
+        . and use these command to get some output <br>
+    </center></h4>
+
+    <script>
+        console.log("Hello World");
+        //alert("Are you begineer!");
+        //document.write("yes! I am a beginer");
+        //console.warn("This is warning");
+        //console.error("This is an error");
+        //console.assert(3==6);
+
+        // Variables
+
+        var num1 = 30;
+        var num2 = 40;
+        console.log(num1 + num2);
+
+        // Data Types
+        //numbers,  strings
+        var str1 = "Hey, This is Sakshi!";
+        var str2 = "I am learning Javascript";
+
+        // Objects, booleans
+
+        var score = {
+            Raush: 30,
+            Suzi: 40,
+            Me: 80
+        }
+        console.log(score)
+
+        /* Two types of data types:
+            1. Primitive data types: Number, String, Null, Undefined,  boolean, symbol
+            2. Reference Datatypes: Arrays and Objects
+        */
+
+        var arr = [5, 4, 3, 2, 1, 'Hey']
+        console.log(arr)
+
+        // Operators
+
+        var x = 890;
+        var y = 340;
+        console.log("The value of x+y is", x+y);
+        console.log("The value of x-y is", x-y);
+        console.log("The value of x*y is", x*y);
+        console.log("The value of x/y is", x/y);
+        console.log("The value of x%y is", x%y);
+
+        // Assignment Operators
+            //Comparison Operator
+
+        var x = 34;
+        var y = 64;
+        console.log(x==y)
+        console.log(x<y);
+        console.log(x<=y);
+
+        //Avg Fun
+
+        function avg(a, b){
+            return(a+b)/2;
+        }
+        Ans1 = avg(2, 2);
+        Ans2 = avg(10, 10);
+        Ans3 = avg(10, 15);
+        console.log(Ans1, Ans2, Ans3)
+
+        // Conditionals
+
+        var age = 6;
+        if(age > 21){
+            console.log('Yes, You are eligible for civil services');
+        }
+        else{
+            console.log('You are not elegible');
+        }
+
+        var arr = [1, 2, 3, 4, 5, 6, 7];
+        console.log(arr)
+        for(var i=0; i<arr.length; i++){
+            if(i==2){
+                break;
+                //continue;
+            }
+            console.log(arr[i])
+        }
+
+        myArr = ["Fan", "Camera", 34, null, true];
+        console.log(myArr.length)
+        //myArr.pop();
+        //myArr.push("Sakshi")
+        //myArr.shift()
+        //myArr.unshift("Sakshi")
+        //myArr.toString()
+        //console.log(myArr)
+        myArr.sort()
+        console.log(myArr)
+
+        // If we want to sort an array that is in numbers, then remember that it converts firstly as a string then sorted
+        Arr = [2, 33, 145, 267, 7, 5, 57, 98, 9, 64, 46]
+        Arr.sort()
+        console.log(Arr)
+
+        // 10 January (practicing)
+        // String methods in javascript
+
+        var myString = "Hello This is me!"
+        console.log(myString.length)
+        console.log(myString.indexOf("me"))
+        console.log(myString.slice(0,7))
+
+        myDate = new Date();
+        console.log(myDate.getSeconds())
+
+        // Arrow Function
+        // setTimeOut and SetInterval
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

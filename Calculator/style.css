@@ -1,0 +1,31 @@
+*{
+	margin: 0px;
+	padding: 3px;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+body{
+	background: #ffffff;
+}
+.main .calculatorForm{
+	position: relative;
+	height: 460px;
+	width: 350px;
+	border:2px solid #000;
+}
+.main .calculatorForm div{
+	height: calc(450px/6);
+	width: 100%;
+	display: flex;
+    flex:1;
+}
+.main .calculatorForm div input{
+	height: 100%;
+	width: 100%;
+	font-size: 2.5em;
+	font-weight: 600;
+}
+.main .calculatorForm .clear{
+    width: 50%;
+    float: left;
+}
